@@ -1,0 +1,44 @@
+<!--Requisitos de finalización
+
+Ejericio 1
+
+Crear el código que dada una distancia determine el medio de transporte apropiado de acuerdo a las siguientes reglas:
+
+0 a 1000 metros = pie
+
+1000 a 10000 metros = bicicleta
+
+10000 a 30000 metros = colectivo
+
+30000 a 100000 metros = auto
+
++100000 = avion-->
+
+
+
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <title></title>
+</head>
+
+<body>
+    <script>
+        distancia = parseInt(prompt('Ingrese distancia en números:', ''));
+
+        if (distancia >= 0 && distancia <= 1000) {
+            document.write('El medio de transporte apropiado es a pie.');
+        } else if (distancia > 1000 && distancia <= 10000) {
+            document.write('El medio de transporte apropiado es bicicleta.');
+        } else if (distancia > 10000 && distancia <= 30000) {
+            document.write('El medio de transporte apropiado es auto.');
+        } else {
+            document.write('El medio de transporte apropiado es avion.');
+        }
+    </script>
+
+</body>
+
+</html>
